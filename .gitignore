@@ -9,3 +9,5 @@ pom.xml
 .lein-deps-sum
 TAGS
 checkouts/*
+/.clj-kondo/
+/.lsp/

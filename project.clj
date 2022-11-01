@@ -8,8 +8,7 @@
   :dependencies [[org.clojure/clojure "1.11.1"]]
   :profiles {:dev {:dependencies [[org.clojure/data.json "2.4.0"]
                                   [jline/jline "3.0.0.M1"]]
-                   :resource-paths ["test-resources"]}
-             :1.11 {:dependencies [[org.clojure/clojure "1.11.1"]]}}
+                   :resource-paths ["test-resources"]}}
 
   :release-tasks [["vcs" "assert-committed"]
                   ["change" "version"
@@ -26,5 +25,5 @@
                                         :password [:env/jfrog_access_token :gpg]
                                         :sign-releases false}]]
 
-  :aliases {"all" ["with-profile" "dev:dev,1.11"]}
+  :aliases {"all" ["with-profile" "dev:dev"]}
   :global-vars {*warn-on-reflection* true})
